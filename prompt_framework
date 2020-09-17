@@ -154,7 +154,7 @@ prompt_clean_reprint() {
 
 prompt_clean_pwd() {
     local num tmp p q
-    if [[ -v prompt_clean_pwd_length ]]; then
+    if (( ${+prompt_clean_pwd_length} )); then
         num=$prompt_clean_pwd_length
     else
         num=1
